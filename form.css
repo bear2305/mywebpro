@@ -1,0 +1,134 @@
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+body{
+    width:100vw;
+    height:100vh;
+    background-color:#4f46e5;
+}
+
+.divmain{
+    width: 100%;
+    height: 100%;
+    background-color:#4f46e5;;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.divsub{
+    width: 50%;
+    height: 90%;
+    background-color: #f5f6fa;
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1.5vw
+}
+
+
+
+
+header{
+    width:90%;
+    height:10%;
+    min-height: 37px;
+    min-width:112px;
+    background-color: rgb(41, 164, 39);
+    color:white;
+    border-radius: 25px;
+    margin-top:0.7vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cashio{
+    display:flex;
+    flex-grow:0.6;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.divform{
+    width:90%;
+    height:80%;
+    background-color:#eef2ff; 
+    border-radius: 15px;
+    margin-bottom: 1.5vw;
+   
+    padding:10px;
+}
+
+
+.cashio > button{
+    background-color: rgb(190, 187, 193);
+    width: 30%;
+    height: 6vh;
+    min-height: 18px;
+    border-radius: 15px;
+}
+
+
+label {margin-bottom: 8px;
+    font-weight: bold;
+    color: #09060f;
+}
+
+input[type="text"],
+input[type="number"],input[type="date"],input[type="time"]{width: 100%;
+padding: 1vw;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 1em;
+margin-bottom: 3vh}
+input[type="date" ],input[type="time"]{width:30%;}
+.fix{
+    font-weight:lighter; 
+    font-size: 0.7em;
+}
+
+.formbtn{ 
+   display: flex;
+   flex-grow:1;
+   justify-content: center;
+   align-items: center;
+    gap: 3.5vw;
+}
+
+
+form{
+    height: 100%;
+    display :flex;
+    flex-direction:column;
+}
+
+button{
+    width:15vw;
+    height: 7vh;
+    border-radius:18px;
+    box-shadow:2px 1.5px grey;
+}
+
+button:hover{
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    cursor:pointer;
+}
+button:hover{ 
+    transform: translateY(-3px);
+}
+button:active {
+    transform: scale(0.75);
+    opacity: 0.75;
+  }
+  button[type="reset"]{
+    background-color: rgb(232, 179, 179);
+  }
+  button[type="submit"]{
+    background-color: rgb(195, 231, 195);
+  }

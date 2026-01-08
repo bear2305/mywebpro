@@ -1,0 +1,141 @@
+/*By Banahene Emmanuel Adamnor 2425402521 */
+
+button:hover{
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    cursor:pointer;
+}
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+
+/* body domain */
+body{
+    height:100vh;
+    width:100vw;
+}
+
+
+/* list domain*/
+.ul{
+    width:100vw;
+    height:8vh;
+    min-width:255px;
+    min-height: 23px;
+    background-color: rgb(12, 108, 251);
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.ul > button{
+    width: 15vw ;
+    height:70%;
+    min-width: 50px;
+    padding:0.5px;
+    border-radius:10px;
+    box-shadow: 2px 1px grey;
+    background-color: azure;
+}
+
+.ul > button:active{
+    transform: translateY(-7px);
+}
+.ul > button:hover{
+    background-color:rgb(135, 216, 135);
+}
+
+
+
+/* main page domian */
+main{
+   background-color:rgb(227, 227, 227);
+   width: 100vw;
+   height: 72vh;
+   min-width:255px;
+   min-height:82px;
+
+}
+
+
+/* bottons domain */
+.divbtncont{
+    width:100vw;
+    height: 9vh;
+    min-width:255px;
+    min-height:20px;
+    display:flex;
+    justify-content:center;
+    background-color: white;
+}
+.divbtn2{
+    background-color: cornsilk;
+    height: 100%;
+    width:70%;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    border-radius:25px;
+}
+.divbtn2 > button{
+    height: 7vh;
+    width:25vw;
+    min-width:64px ;
+    min-height:18px;
+    padding:3px;
+    border-radius:18px;
+    box-shadow:2px 1.5px grey;
+    color:white;
+}
+
+.divbtn2 > button:hover{ 
+    transform: translateY(-3px);
+}
+
+#a1{
+    background-color: rgb(12, 207, 12);
+}
+#a2{
+    background-color:rgb(250, 75, 75);
+}
+
+.divbtn2 > button:active {
+    transform: scale(0.75);
+    opacity: 0.75;
+  }
+  
+
+
+
+/* table domain */
+footer{
+    height: 11vh;
+    width:100vw;
+    min-width: 255px;
+    min-height:44px;
+}
+table{
+    width:100%;
+    border-collapse:collapse;
+    height: 100%;
+    background-color: aliceblue
+}
+th,td{
+    padding:1px;
+    font-size: larger;
+    text-align:center;
+    border : 2px solid grey;
+}
+
+thead tr th {
+    border-bottom: none;
+}
+tbody tr td {
+    border-top: none;
+}
+
+.red{color:red;}
+.green{color:rgb(5, 192, 5);}
+.black{color:black;}

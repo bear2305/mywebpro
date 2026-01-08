@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+    <style>
+        #formOverlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 100; }
+        .ul { justify-content: center; } 
+    </style>
+</head>
+<body>
+
+    <div class="ul">
+        <h2 style="color: white;">My Expense Tracker</h2>
+    </div>
+
+    <main id="historyContainer">
+        </main>
+
+    <div class="divbtncont">
+        <div class="divbtn2">
+            <button id="btnIn" style="background-color: rgb(12, 207, 12);"> Cash In </button>
+            <button id="btnOut" style="background-color: rgb(250, 75, 75);"> Cash Out </button>
+        </div>
+    </div>
+
+    <div id="formOverlay">
+        <div class="divmain">
+            <div class="divsub">
+                <header id="header"><h1 id="formTitle">Transaction</h1></header>
+                <div class="divform">
+                    <form id="transactionForm">
+                        <div class="form-group">
+                            <label for="cash">Amount</label>
+                            <input type="number" id="cash" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="note">Notes</label>
+                            <input type="text" id="note" required>
+                        </div>
+                        <div class="flex">
+                            <div class="form-group">
+                                <label for="prefferedDate">Date</label>
+                                <input type="date" id="prefferedDate" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="prefferedTime">Time</label>
+                                <input type="time" id="prefferedTime" required>
+                            </div>
+                        </div>
+                        <div class="formbtn">
+                            <button type="button" id="cancelBtn">Cancel</button>
+                            <button type="submit">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <table>
+            <thead>
+                <tr>
+                    <th class="green">Total Cash In</th>
+                    <th class="red">Total Cash Out</th>
+                    <th class="black">Balance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="totalIn" class="green">0</td>
+                    <td id="totalOut" class="red">0</td>
+                    <td id="balance" class="black">0</td>
+                </tr>
+            </tbody>
+        </table>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
